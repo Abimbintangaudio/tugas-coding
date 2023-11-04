@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>latihan4.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #2aacb8;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+latihan4.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">latihan4 </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s3">// Mendeklarasikan array integer dengan ukuran 10</span>
+        <span class="s0">int</span><span class="s2">[] </span><span class="s1">angka </span><span class="s2">= </span><span class="s0">new int</span><span class="s2">[</span><span class="s4">10</span><span class="s2">];</span>
+
+        <span class="s3">// Mengisi elemen-elemen array menggunakan loop for</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s4">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">angka</span><span class="s2">.</span><span class="s1">length</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">angka</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] = </span><span class="s1">i </span><span class="s2">* </span><span class="s4">30</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s3">// Mencetak elemen-elemen array menggunakan loop for</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;Isi Array:&quot;</span><span class="s2">);</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s4">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">angka</span><span class="s2">.</span><span class="s1">length</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;Elemen &quot; </span><span class="s2">+ (</span><span class="s1">i </span><span class="s2">+ </span><span class="s4">1</span><span class="s2">) + </span><span class="s5">&quot;: &quot; </span><span class="s2">+ </span><span class="s1">angka</span><span class="s2">[</span><span class="s1">i</span><span class="s2">]);</span>
+        <span class="s2">}</span>
+
+        <span class="s3">// Menghitung rata-rata elemen dalam array</span>
+        <span class="s0">int </span><span class="s1">total </span><span class="s2">= </span><span class="s4">0</span><span class="s2">;</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s4">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">angka</span><span class="s2">.</span><span class="s1">length</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">total </span><span class="s2">+= </span><span class="s1">angka</span><span class="s2">[</span><span class="s1">i</span><span class="s2">];</span>
+        <span class="s2">}</span>
+        <span class="s0">double </span><span class="s1">rataRata </span><span class="s2">= (</span><span class="s0">double</span><span class="s2">) </span><span class="s1">total </span><span class="s2">/ </span><span class="s1">angka</span><span class="s2">.</span><span class="s1">length</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;Rata-rata: &quot; </span><span class="s2">+ </span><span class="s1">rataRata</span><span class="s2">);</span>
+
+        <span class="s3">// Mencari elemen tertinggi dalam array</span>
+        <span class="s0">int </span><span class="s1">maksimum </span><span class="s2">= </span><span class="s1">angka</span><span class="s2">[</span><span class="s4">0</span><span class="s2">];</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s4">1</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">angka</span><span class="s2">.</span><span class="s1">length</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">angka</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] &gt; </span><span class="s1">maksimum</span><span class="s2">) {</span>
+                <span class="s1">maksimum </span><span class="s2">= </span><span class="s1">angka</span><span class="s2">[</span><span class="s1">i</span><span class="s2">];</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;Elemen Tertinggi: &quot; </span><span class="s2">+ </span><span class="s1">maksimum</span><span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>
